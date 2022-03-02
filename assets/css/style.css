@@ -373,7 +373,7 @@ hr {
 
 .about__parallax {
   height: 75vh;
-  background-image: url("../img/me.JPG");
+  background-image: url("../img/me.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
