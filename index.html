@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bienvenido a mi página personal" />
+    <meta
+      name="keywords"
+      content="sebastian, vargas, tcotd, personal, portafolio, ||s||"
+    />
+    <meta name="author" content="Sebastian Vargas Pizango" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Sebastian Vargas</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__spacer"></div>
+      <div class="header__logo">
+        <a href="#intro">
+          <img
+            src="./assets/img/logo.svg"
+            alt="Logo de Sebastian"
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+
+      <nav class="header__navigation">
+        <ul class="header__navigation-links">
+          <li>
+            <a class="header__navigation-link" href="#works">Proyectos</a>
+          </li>
+          <li>
+            <a class="header__navigation-link" href="#about">Acerca de mí</a>
+          </li>
+          <li>
+            <a class="header__navigation-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons-sharp"> menu </span>
+        </label>
+      </div>
+
+      <!-- Sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons-sharp"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#works"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Proyectos</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#about"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Acerca de mí</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#contact"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container main-page">
+      <!-- INTRO -->
+      <section id="intro" class="intro">
+        <h1 class="intro__presentation">¡Hola!, soy Sebastian</h1>
+        <span class="intro__closure">Y soy un desarrollador frontend</span>
+      </section>
+
+      <!-- WORKS -->
+      <section id="works">
+        <h2>Mis proyectos</h2>
+
+        <div class="works__projects">
+          <article class="works__project">
+            <h3>Fisiniús</h3>
+            <img
+              src="./assets/img/fisinius-cover.webp"
+              class="works__project-image"
+              alt="Fisiniús"
+            />
+          </article>
+
+          <article class="works__project">
+            <h3>Hacker News</h3>
+            <img
+              src="./assets/img/hacker-news-cover.webp"
+              class="works__project-image"
+              alt="Artemis"
+            />
+          </article>
+
+          <article class="works__project">
+            <h3>Artemis</h3>
+            <img
+              src="./assets/img/artemis-cover.webp"
+              class="works__project-image"
+              alt="Artemis"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- ACERCA DE MÍ -->
+      <section id="about" class="about">
+        <h2>Acerca de mí</h2>
+
+        <p>
+          ¡Encantado de conocerte! Soy Sebastian Vargas y me desenvuelvo como
+          desarrollador frontend con experiencia en varios proyectos utilizando
+          Angular y conceptos de diseño web. Actualmente, estoy estudiando la
+          carrera de Ingeniería de Software en la
+          <abbr title="Universidad Nacional Mayor de San Marcos">UNMSM</abbr>.
+        </p>
+
+        <div class="about__parallax"></div>
+
+        <p>
+          He trabajado anteriormente como diseñador UX, realizando varios
+          proyectos con alta eficacia y aprobación en cuanto al diseño de
+          interfaces y marca. Aprobación que agradezco también al trabajo
+          conjunto con las personas que conformé equipos para llevar a cabo
+          estos objetivos.
+        </p>
+
+        <p>
+          Existen varios factores para que un proyecto pueda tener alto ratio de
+          éxito. Para mí, los componentes son sencillos: Comunicación,
+          seguridad, empatía, determinación, y último pero no menos importante,
+          el tratar de que el liderazgo sea el mejor posible.
+        </p>
+
+        <p>
+          Dicho sea de paso, también he realizado varios proyectos fuera de la
+          programación. Un ejemplo es mi libro <em>Sentimientos</em> que ya está
+          a la venta. Si deseas tener una lectura interesante, te animo a que lo
+          compres. No te decepcionarás.
+        </p>
+
+        <p>
+          Me apasiona el viajar. He realizado un voluntariado internacional
+          trabajando con las ODS. Tengo comunicación en inglés.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- CONTACTO -->
+      <section id="contact" class="contact">
+        <h2>Let's get in touch!</h2>
+
+        <p>
+          ¿Quieres ponerte en contacto conmigo?, ¿o deseas hablarme de un
+          proyecto que te interesa?
+        </p>
+        <p>¡Pongámonos en contacto entonces!</p>
+
+        <form
+          action="mailto:vargaspizango1@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="contact__form"
+        >
+          <div class="contact__form-control">
+            <label class="contact__form-label" for="form__name"
+              >Tu nombre</label
+            >
+            <input
+              id="form__name"
+              class="contact__form-name"
+              type="text"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="contact__form-control">
+            <label class="contact__form-label" for="form__message"
+              >Cuéntame qué es lo que piensas</label
+            >
+            <textarea
+              id="form__message"
+              class="contact__form-message"
+              rows="5"
+              maxlength="500"
+              type="text"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button--accent form__submit" type="submit">
+            ¡Hagámoslo realidad!
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <span>||S||</span>
+      </div>
+
+      <nav class="footer__networks">
+        <a href="https://github.com/sebas-tcotd" target="_blank">
+          <div class="footer__network footer__network--github"></div>
+        </a>
+
+        <a href="https://twitter.com/sebas_tcotd" target="_blank">
+          <div class="footer__network footer__network--twitter"></div>
+        </a>
+
+        <a href="https://www.instagram.com/sebas_tcotd/" target="_blank">
+          <div class="footer__network footer__network--instagram"></div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sebas-vargas/" target="_blank">
+          <div class="footer__network footer__network--linkedin"></div>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
