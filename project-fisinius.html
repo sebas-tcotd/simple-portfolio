@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bienvenido a mi página personal" />
+    <meta
+      name="description"
+      content="Échale un vistazo a mi proyecto Fisiniús."
+    />
     <meta
       name="keywords"
-      content="sebastian, vargas, tcotd, personal, portafolio, ||s||"
+      content="sebastian, vargas, tcotd, personal, portafolio, fisinius, ||s||"
     />
     <meta name="author" content="Sebastian Vargas Pizango" />
     <link
@@ -21,14 +24,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Sebastian Vargas</title>
+    <title>Fisiniús | Sebastian Vargas</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
       <div class="header__spacer"></div>
       <div class="header__logo">
-        <a href="#intro">
+        <a href="./index.html">
           <img
             src="./assets/img/logo.svg"
             alt="Logo de Sebastian"
@@ -92,102 +95,70 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="container main-page">
-      <!-- INTRO -->
-      <section id="intro" class="intro">
-        <h1 class="intro__presentation">¡Hola!, soy Sebastian</h1>
-        <span class="intro__closure">Y soy un desarrollador frontend</span>
+    <main class="main-page">
+      <section class="project-header project-header--fisinius">
+        <div class="project-header__presentation">
+          <h1 class="project-header__title">Fisiniús</h1>
+          <span class="project-header__tagline"
+            >Showing news with accessibility</span
+          >
+        </div>
+
+        <a href="https://fisinius.netlify.app/" target="_blank">
+          <button class="button button--accent project-header__cta">
+            Visita el proyecto
+          </button>
+        </a>
       </section>
 
-      <!-- WORKS -->
-      <section id="works">
-        <h2>Mis proyectos</h2>
+      <section class="container project-about">
+        <h2 class="project-about__title">Acerca de Fisiniús</h2>
 
-        <div class="works__projects">
-          <a class="works__project-link" href="./project-fisinius.html">
-            <article class="works__project">
-              <h3 class="work__project-title">Fisiniús</h3>
-              <img
-                src="./assets/img/fisinius-cover.webp"
-                class="works__project-image"
-                alt="Fisiniús"
-                loading="lazy"
-              />
-            </article>
-          </a>
+        <p>Fisiniús es un portal de noticias enfocado a la accesibilidad.</p>
 
-          <a class="works__project-link" href="./project-hacker-news.html">
-            <article class="works__project">
-              <h3>Hacker News</h3>
-              <img
-                src="./assets/img/hacker-news-cover.webp"
-                class="works__project-image"
-                alt="Artemis"
-                loading="lazy"
-              />
-            </article>
-          </a>
+        <p>En Fisiniús, puedes hacer uso de las siguientes características:</p>
+        <ul>
+          <li>Puedes alternar entre el modo oscuro y claro.</li>
+          <li>
+            Puedes activar filtros daltónicos. Tienes disponible 8 tipos de
+            daltonismo:
+            <ul>
+              <li>Protanopía</li>
+              <li>Deuteranopía</li>
+              <li>Tritanopía</li>
+              <li>Acromatopcia</li>
+              <li>Protanomalía</li>
+              <li>Deuteranomalía</li>
+              <li>Tritanomalía</li>
+              <li>Acromatomalía</li>
+            </ul>
+          </li>
+          <li>Puedes activar el lector inmersivo estando en una noticia.</li>
+          <li>Puedes ir a la fuente original de la noticia.</li>
+        </ul>
+      </section>
 
-          <a class="works__project-link" href="./project-artemis.html">
-            <article class="works__project">
-              <h3>Artemis</h3>
-              <img
-                src="./assets/img/artemis-cover.webp"
-                class="works__project-image"
-                alt="Artemis"
-                loading="lazy"
-              />
-            </article>
-          </a>
+      <section class="container project-technical-sheet">
+        <h2 class="project-technical-sheet__title">Tecnologías usadas</h2>
+
+        <div class="project-technical-sheet__technologies">
+          <!-- Lista de tecnologías usadas -->
+          <h3>Front-end</h3>
+
+          <h3>Back-end</h3>
         </div>
       </section>
 
-      <!-- ACERCA DE MÍ -->
-      <section id="about" class="about">
-        <h2>Acerca de mí</h2>
+      <section class="container project-resources">
+        <h2>Recursos</h2>
 
-        <p>
-          ¡Encantado de conocerte! Soy Sebastian Vargas y me desenvuelvo como
-          desarrollador frontend con experiencia en varios proyectos utilizando
-          Angular y conceptos de diseño web. Actualmente, estoy estudiando la
-          carrera de Ingeniería de Software en la
-          <abbr title="Universidad Nacional Mayor de San Marcos">UNMSM</abbr>.
-        </p>
-
-        <div class="about__parallax"></div>
-
-        <p>
-          He trabajado anteriormente como diseñador UX, realizando varios
-          proyectos con alta eficacia y aprobación en cuanto al diseño de
-          interfaces y marca. Aprobación que agradezco también al trabajo
-          conjunto con las personas que conformé equipos para llevar a cabo
-          estos objetivos.
-        </p>
-
-        <p>
-          Existen varios factores para que un proyecto pueda tener alto ratio de
-          éxito. Para mí, los componentes son sencillos: Comunicación,
-          seguridad, empatía, determinación, y último pero no menos importante,
-          el tratar de que el liderazgo sea el mejor posible.
-        </p>
-
-        <p>
-          Dicho sea de paso, también he realizado varios proyectos fuera de la
-          programación. Un ejemplo es mi libro <em>Sentimientos</em> que ya está
-          a la venta. Si deseas tener una lectura interesante, te animo a que lo
-          compres. No te decepcionarás.
-        </p>
-
-        <p>
-          Me apasiona el viajar. He realizado un voluntariado internacional
-          trabajando con las ODS. Tengo comunicación en inglés.
-        </p>
+        <ul>
+          <li>Github</li>
+          <li>Demo</li>
+        </ul>
       </section>
 
-      <hr />
-
-      <!-- CONTACTO -->
-      <section id="contact" class="contact">
+      <section id="contact" class="container contact">
         <h2>Let's get in touch!</h2>
 
         <p>
