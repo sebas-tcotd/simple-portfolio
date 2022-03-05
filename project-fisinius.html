@@ -15,7 +15,7 @@
     <meta name="author" content="Sebastian Vargas Pizango" />
     <link
       rel="shortcut icon"
-      href="./assets/img/logo.svg"
+      href="./assets/img/favicon.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
@@ -122,39 +122,111 @@
           <li>
             Puedes activar filtros daltónicos. Tienes disponible 8 tipos de
             daltonismo:
-            <ul>
-              <li>Protanopía</li>
-              <li>Deuteranopía</li>
-              <li>Tritanopía</li>
-              <li>Acromatopcia</li>
-              <li>Protanomalía</li>
-              <li>Deuteranomalía</li>
-              <li>Tritanomalía</li>
-              <li>Acromatomalía</li>
-            </ul>
+            <dl>
+              <dt>Carencia de cono</dt>
+              <dd>
+                <li>Protanopía</li>
+                <li>Deuteranopía</li>
+                <li>Tritanopía</li>
+                <li>Acromatopcia</li>
+              </dd>
+
+              <dt>Anomalías</dt>
+              <dd>
+                <li>Protanomalía</li>
+                <li>Deuteranomalía</li>
+                <li>Tritanomalía</li>
+                <li>Acromatomalía</li>
+              </dd>
+            </dl>
           </li>
           <li>Puedes activar el lector inmersivo estando en una noticia.</li>
           <li>Puedes ir a la fuente original de la noticia.</li>
         </ul>
       </section>
 
-      <section class="container project-technical-sheet">
-        <h2 class="project-technical-sheet__title">Tecnologías usadas</h2>
+      <section class="container technical-sheet">
+        <h2 class="technical-sheet__title">Tecnologías usadas</h2>
 
-        <div class="project-technical-sheet__technologies">
+        <div class="technical-sheet__technologies">
           <!-- Lista de tecnologías usadas -->
-          <h3>Front-end</h3>
+          <div class="technical-sheet__stack">
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/angular-logo.svg"
+                alt="Angular"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                Angular
+              </figcaption>
+            </figure>
 
-          <h3>Back-end</h3>
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/tailwind-logo.svg"
+                alt="Tailwind"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                TailwindCSS
+              </figcaption>
+            </figure>
+
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/netlify-logo.svg"
+                alt="Netlify"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                Netlify
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="technical-sheet__stack technical-sheet__stack--backend"
+          ></div>
         </div>
       </section>
 
-      <section class="container project-resources">
-        <h2>Recursos</h2>
+      <section class="project-resources">
+        <h2 class="container">Recursos</h2>
 
-        <ul>
-          <li>Github</li>
-          <li>Demo</li>
+        <ul class="project-resources__parallaxes">
+          <li
+            class="project-resources__resource project-resources__resource--github"
+          >
+            <a
+              class="project-resources__resource-link"
+              href="https://github.com/sebas-tcotd/fisinius"
+            >
+              <img
+                class="project-resources__resource-image"
+                alt="Logo de GitHub"
+                loading="lazy"
+                src="./assets/img/github-logo.svg"
+              />
+              <p class="project-resources__resource-description">
+                Visita el repositorio
+              </p>
+            </a>
+          </li>
+          <li
+            class="project-resources__resource project-resources__resource--fisinius-demo"
+          >
+            <a
+              class="project-resources__resource-link"
+              href="https://fisinius.netlify.app"
+            >
+              <span
+                class="material-icons-sharp project-resources__resource-image"
+              >
+                newspaper
+              </span>
+              <p class="project-resources__resource-description">Ver la demo</p>
+            </a>
+          </li>
         </ul>
       </section>
 
