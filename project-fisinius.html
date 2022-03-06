@@ -43,13 +43,15 @@
       <nav class="header__navigation">
         <ul class="header__navigation-links">
           <li>
-            <a class="header__navigation-link" href="#works">Proyectos</a>
+            <a class="header__navigation-link" href="#about-the-project"
+              >Acerca de</a
+            >
           </li>
           <li>
-            <a class="header__navigation-link" href="#about">Acerca de mí</a>
+            <a class="header__navigation-link" href="#tech-stack">Tech stack</a>
           </li>
           <li>
-            <a class="header__navigation-link" href="#contact">Contacto</a>
+            <a class="header__navigation-link" href="#resources">Recursos</a>
           </li>
         </ul>
       </nav>
@@ -72,23 +74,23 @@
         <div class="sidebar__items">
           <a
             class="sidebar__item"
-            href="#works"
+            href="#about-the-project"
             onclick="document.getElementById('sidebar-check').checked = false"
-            >Proyectos</a
+            >Acerca de</a
           >
 
           <a
             class="sidebar__item"
-            href="#about"
+            href="#tech-stack"
             onclick="document.getElementById('sidebar-check').checked = false"
-            >Acerca de mí</a
+            >Tech stack</a
           >
 
           <a
             class="sidebar__item"
-            href="#contact"
+            href="#resources"
             onclick="document.getElementById('sidebar-check').checked = false"
-            >Contacto</a
+            >Recursos</a
           >
         </div>
       </nav>
@@ -111,7 +113,7 @@
         </a>
       </section>
 
-      <section class="container project-about">
+      <section id="about-the-project" class="container project-about">
         <h2 class="project-about__title">Acerca de Fisiniús</h2>
 
         <p>Fisiniús es un portal de noticias enfocado a la accesibilidad.</p>
@@ -145,7 +147,7 @@
         </ul>
       </section>
 
-      <section class="container technical-sheet">
+      <section id="tech-stack" class="container technical-sheet">
         <h2 class="technical-sheet__title">Tecnologías usadas</h2>
 
         <div class="technical-sheet__technologies">
@@ -190,7 +192,7 @@
         </div>
       </section>
 
-      <section class="project-resources">
+      <section id="resources" class="project-resources">
         <h2 class="container">Recursos</h2>
 
         <ul class="project-resources__parallaxes">
@@ -226,7 +228,9 @@
               >
                 newspaper
               </span>
-              <p class="project-resources__resource-description">Experimenta la demo</p>
+              <p class="project-resources__resource-description">
+                Experimenta la demo
+              </p>
             </a>
           </li>
         </ul>
