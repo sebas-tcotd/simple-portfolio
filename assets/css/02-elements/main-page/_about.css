@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #ABOUT
+\*------------------------------------*/
+
+.about__parallax {
+  height: 75vh;
+  background-image: url("../../../img/me.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: grayscale(1) brightness(1.15);
+}
+@media (min-width: 768px) {
+  .about__parallax {
+    height: 50vh;
+    background-image: url("../../../img/me-HD.png");
+    filter: grayscale(1) brightness(1.15) contrast(1.25);
+  }
+}

@@ -1,0 +1,53 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  flex-direction: column;
+  min-height: 4rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.footer__networks {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footer__network {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.footer__network--github {
+  background: url("../../../img/github-logo.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.footer__network--twitter {
+  background: url("../../../img/twitter-logo.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.footer__network--instagram {
+  background: url("../../../img/instagram-logo.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.footer__network--linkedin {
+  background: url("../../../img/linkedin-logo.svg");
+  background-size: contain;
+  background-position: center;
+}

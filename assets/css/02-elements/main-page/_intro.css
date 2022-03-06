@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #INTRO
+\*------------------------------------*/
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 2560px) {
+  .intro {
+    height: 50vh;
+  }
+}
+
+.intro__presentation {
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: calc(52rem / var(--fs-base));
+  margin: 0;
+}
+@media (min-width: 1440px) {
+  .intro__presentation {
+    font-size: calc(83rem / var(--fs-base));
+  }
+}
+
+.intro__closure {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: calc(17rem / var(--fs-base));
+}
+@media (min-width: 1440px) {
+  .intro__closure {
+    font-size: calc(29rem / var(--fs-base));
+  }
+}

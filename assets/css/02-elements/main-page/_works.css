@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #WORKS
+\*------------------------------------*/
+
+.works__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .works__projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.works__project-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.works__project-image {
+  width: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,157 @@
+/*------------------------------------*\
+  #RESOURCES
+\*------------------------------------*/
+
+.project-resources__parallaxes {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .project-resources__parallaxes {
+    flex-direction: row;
+  }
+}
+
+.project-resources__resource {
+  flex: 1 1 25vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .project-resources__resource {
+    height: 50vh;
+  }
+}
+
+.project-resources__resource--fisinius-demo::before {
+  background-image: url("../../../img/news.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) brightness(0.37);
+  transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .project-resources__resource--fisinius-demo::before {
+    background-attachment: fixed;
+  }
+}
+
+.project-resources__resource--fisinius-demo:hover::before {
+  filter: none;
+}
+
+.project-resources__resource--hacker-news-demo::before {
+  background-image: url("../../../img/hacker-news.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) brightness(0.37);
+  transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .project-resources__resource--hacker-news-demo::before {
+    background-attachment: fixed;
+  }
+}
+
+.project-resources__resource--hacker-news-demo:hover::before {
+  filter: none;
+}
+
+.project-resources__resource--artemis-demo::before {
+  background-image: url("../../../img/artemis.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) brightness(0.37);
+  transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .project-resources__resource--artemis-demo::before {
+    background-attachment: fixed;
+  }
+}
+
+.project-resources__resource--artemis-demo:hover::before {
+  filter: none;
+}
+
+.project-resources__resource--github::before {
+  background-image: url("../../../img/github.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) brightness(0.37);
+  transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .project-resources__resource--github::before {
+    background-attachment: fixed;
+  }
+}
+
+.project-resources__resource--github:hover {
+  text-shadow: 0 2px 20px var(--primary-color);
+}
+
+.project-resources__resource--github:hover::before {
+  filter: none;
+}
+
+.project-resources__resource-link {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project-resources__resource-image {
+  width: 25%;
+  text-align: center;
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .project-resources__resource-image {
+    font-size: 7.975rem;
+  }
+}
+
+.project-resources__resource-description {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}

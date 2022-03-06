@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;700&family=Raleway:wght@300;500&display=swap");
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  /* Primitivas */
+  --shark: hsla(240, 1%, 14%, 0.87);
+  --shark-mid: hsla(240, 1%, 14%, 0.5);
+  --athens-gray: hsl(240, 22%, 95%);
+  --cornflower-blue: hsl(236, 92%, 66%);
+  --malibu: hsl(236, 92%, 80%);
+  --governor-bay: hsl(236, 47%, 46%);
+
+  /* Semánticas */
+  --primary-color: var(--shark);
+  --primary-color-light: var(--shark-mid);
+  --accent-color: var(--cornflower-blue);
+  --accent-color-light: var(--malibu);
+  --accent-color-dark: var(--governor-bay);
+  --white: var(--athens-gray);
+
+  /* Tipografía */
+  --fs-base: 14;
+  --main-font: Barlow, system-ui, sans-serif;
+  --heading-font: Raleway, system-ui, sans-serif;
+
+  /* Sizing */
+  --size-4: 4rem;
+  --header-height: var(--size-4);
+}
