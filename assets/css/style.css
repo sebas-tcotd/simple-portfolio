@@ -668,7 +668,7 @@ hr {
   filter: grayscale(1) brightness(0.37);
   transition: all 0.5s ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .project-resources__resource--fisinius-demo::before {
     background-attachment: fixed;
   }
@@ -692,7 +692,7 @@ hr {
   filter: grayscale(1) brightness(0.37);
   transition: all 0.5s ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .project-resources__resource--github::before {
     background-attachment: fixed;
   }
