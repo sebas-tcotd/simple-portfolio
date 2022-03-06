@@ -93,7 +93,7 @@ abbr[title] {
 @media (min-width: 1024px) {
   .container {
     margin: 0 auto;
-    max-width: calc(1024px / 1.25);
+    width: 75%;
   }
 }
 @media (min-width: 1440px) {
@@ -525,6 +525,11 @@ hr {
   align-content: center;
   position: relative;
 }
+@media (min-width: 768px) {
+  .project-header {
+    gap: 3rem;
+  }
+}
 
 .project-header--fisinius {
   background: url("../img/news.webp") no-repeat center center;
@@ -534,6 +539,11 @@ hr {
 .project-header__title {
   font-size: calc(52rem / var(--fs-base));
   margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .project-header__title {
+    font-size: calc(91rem / var(--fs-base));
+  }
 }
 
 .project-header__tagline {
@@ -571,6 +581,15 @@ hr {
   gap: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .technical-sheet__stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    gap: 2rem;
+  }
+}
+
 .technical-sheet__figure {
   display: flex;
   flex-direction: column;
@@ -582,6 +601,13 @@ hr {
   padding: 2rem;
   filter: grayscale(1);
   transition: all 0.5s ease;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .technical-sheet__figure {
+    justify-content: space-evenly;
+    margin: 0;
+  }
 }
 
 .technical-sheet__figure:hover {
@@ -596,13 +622,23 @@ hr {
 .technical-sheet__figure-caption {
   font-size: calc(18rem / var(--fs-base));
   font-weight: normal;
+  justify-self: flex-end;
 }
+
+/*------------------------------------*\
+  #RESOURCES
+\*------------------------------------*/
 
 .project-resources__parallaxes {
   display: flex;
   flex-direction: column;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .project-resources__parallaxes {
+    flex-direction: row;
+  }
 }
 
 .project-resources__resource {
@@ -612,13 +648,17 @@ hr {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .project-resources__resource {
+    height: 50vh;
+  }
+}
 
 .project-resources__resource--fisinius-demo::before {
   background-image: url("../img/news.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   content: "";
   position: absolute;
   top: 0;
@@ -627,6 +667,11 @@ hr {
   height: 100%;
   filter: grayscale(1) brightness(0.37);
   transition: all 0.5s ease;
+}
+@media (min-width: 768px) {
+  .project-resources__resource--fisinius-demo::before {
+    background-attachment: fixed;
+  }
 }
 
 .project-resources__resource--fisinius-demo:hover::before {
@@ -638,7 +683,6 @@ hr {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   content: "";
   position: absolute;
   top: 0;
@@ -648,9 +692,14 @@ hr {
   filter: grayscale(1) brightness(0.37);
   transition: all 0.5s ease;
 }
+@media (min-width: 768px) {
+  .project-resources__resource--github::before {
+    background-attachment: fixed;
+  }
+}
 
 .project-resources__resource--github:hover {
-  text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.22);
+  text-shadow: 0 2px 20px var(--primary-color);
 }
 
 .project-resources__resource--github:hover::before {
@@ -667,6 +716,17 @@ hr {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.project-resources__resource-image {
+  width: 25%;
+  text-align: center;
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .project-resources__resource-image {
+    font-size: 7.975rem;
+  }
 }
 
 .project-resources__resource-description {
