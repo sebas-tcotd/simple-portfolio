@@ -6,12 +6,12 @@
 
 :root {
   /* Primitivas */
-  --shark: #222223ee;
-  --shark-mid: #22222388;
-  --athens-gray: #f4f4f8;
-  --cornflower-blue: #5863f8;
-  --malibu: #9ba1fb;
-  --governor-bay: #3e45ae;
+  --shark: hsla(240, 1%, 14%, 0.87);
+  --shark-mid: hsla(240, 1%, 14%, 0.5);
+  --athens-gray: hsl(240, 22%, 95%);
+  --cornflower-blue: hsl(236, 92%, 66%);
+  --malibu: hsl(236, 92%, 80%);
+  --governor-bay: hsl(236, 47%, 46%);
 
   /* Semánticas */
   --primary-color: var(--shark);
@@ -23,13 +23,11 @@
 
   /* Tipografía */
   --fs-base: 14;
-
   --main-font: Barlow, system-ui, sans-serif;
   --heading-font: Raleway, system-ui, sans-serif;
 
   /* Sizing */
   --size-4: 4rem;
-
   --header-height: var(--size-4);
 }
 
@@ -230,8 +228,8 @@ hr {
 }
 
 .header__navigation-link {
-  font-family: var(--heading-font);
   color: var(--primary-color);
+  font-family: var(--heading-font);
   font-weight: bold;
   text-decoration: none;
 }
