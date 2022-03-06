@@ -536,6 +536,11 @@ hr {
   background-size: cover;
 }
 
+.project-header--hacker-news {
+  background: url("../img/hacker-news.webp") no-repeat center center;
+  background-size: cover;
+}
+
 .project-header__title {
   font-size: calc(52rem / var(--fs-base));
   margin: 0;
@@ -617,6 +622,7 @@ hr {
 
 .technical-sheet__figure-image {
   width: 75%;
+  height: 75%;
 }
 
 .technical-sheet__figure-caption {
@@ -675,6 +681,30 @@ hr {
 }
 
 .project-resources__resource--fisinius-demo:hover::before {
+  filter: none;
+}
+
+.project-resources__resource--hacker-news-demo::before {
+  background-image: url("../img/hacker-news.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) brightness(0.37);
+  transition: all 0.5s ease;
+}
+@media (min-width: 1024px) {
+  .project-resources__resource--hacker-news-demo::before {
+    background-attachment: fixed;
+  }
+}
+
+.project-resources__resource--hacker-news-demo:hover::before {
   filter: none;
 }
 

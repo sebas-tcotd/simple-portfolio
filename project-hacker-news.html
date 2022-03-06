@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Échale un vistazo a mi proyecto Fisiniús."
+    />
+    <meta
+      name="keywords"
+      content="sebastian, vargas, tcotd, personal, portafolio, fisinius, ||s||"
+    />
+    <meta name="author" content="Sebastian Vargas Pizango" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Hacker News | Sebastian Vargas</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__spacer"></div>
+      <div class="header__logo">
+        <a href="./index.html">
+          <img
+            src="./assets/img/logo.svg"
+            alt="Logo de Sebastian"
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+
+      <nav class="header__navigation">
+        <ul class="header__navigation-links">
+          <li>
+            <a class="header__navigation-link" href="#about-the-project"
+              >Acerca de</a
+            >
+          </li>
+          <li>
+            <a class="header__navigation-link" href="#tech-stack">Tech stack</a>
+          </li>
+          <li>
+            <a class="header__navigation-link" href="#resources">Recursos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons-sharp"> menu </span>
+        </label>
+      </div>
+
+      <!-- Sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons-sharp"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#about-the-project"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Acerca de</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#tech-stack"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Tech stack</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#resources"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Recursos</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-page">
+      <section class="project-header project-header--hacker-news">
+        <div class="project-header__presentation">
+          <h1 class="project-header__title">Hacker News</h1>
+          <span class="project-header__tagline"
+            >Your favorite tech news in one place</span
+          >
+        </div>
+
+        <a href="https://tcotd-hacker-news.netlify.app/" target="_blank">
+          <button class="button button--accent project-header__cta">
+            Visita el proyecto
+          </button>
+        </a>
+      </section>
+
+      <section id="about-the-project" class="container project-about">
+        <h2 class="project-about__title">Acerca de Hacker News</h2>
+        <!-- Acerca de -->
+        <p>
+          Hacker News es una aplicación web donde puedes ver todas las noticias
+          sobre tus frameworks frontales favoritos.
+        </p>
+
+        <p>En Hacker News podrás realizar lo siguiente:</p>
+        <ul>
+          <li>
+            Puedes seleccionar una publicación como favorita y se almacenará, de
+            modo que cuando vuelvas a visitar la aplicación, ¡estará ahí para
+            ti!
+          </li>
+          <li>
+            Puedes filtrar la aplicación por los frameworks de front-end más
+            populares: Angular, React y Vue.
+          </li>
+        </ul>
+      </section>
+
+      <section id="tech-stack" class="container technical-sheet">
+        <h2 class="technical-sheet__title">Tecnologías usadas</h2>
+
+        <div class="technical-sheet__technologies">
+          <!-- Lista de tecnologías usadas -->
+          <div class="container technical-sheet__stack">
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/html5-logo.svg"
+                alt="HTML5"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                HTML5
+              </figcaption>
+            </figure>
+
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/css3-logo.svg"
+                alt="CSS3"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                CSS3
+              </figcaption>
+            </figure>
+
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/angular-logo.svg"
+                alt="Angular"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                Angular
+              </figcaption>
+            </figure>
+
+            <figure class="technical-sheet__figure">
+              <img
+                class="technical-sheet__figure-image"
+                src="./assets/img/netlify-logo.svg"
+                alt="Netlify"
+              />
+              <figcaption class="technical-sheet__figure-caption">
+                Netlify
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="technical-sheet__stack technical-sheet__stack--backend"
+          ></div>
+        </div>
+      </section>
+
+      <section id="resources" class="project-resources">
+        <h2 class="container">Recursos</h2>
+
+        <ul class="project-resources__parallaxes">
+          <li
+            class="project-resources__resource project-resources__resource--github"
+          >
+            <a
+              class="project-resources__resource-link"
+              href="https://github.com/sebas-tcotd/hacker-news"
+              target="_blank"
+            >
+              <img
+                class="project-resources__resource-image"
+                alt="Logo de GitHub"
+                loading="lazy"
+                src="./assets/img/github-logo.svg"
+              />
+              <p class="project-resources__resource-description">
+                Visita el repositorio
+              </p>
+            </a>
+          </li>
+          <li
+            class="project-resources__resource project-resources__resource--hacker-news-demo"
+          >
+            <a
+              class="project-resources__resource-link"
+              href="https://tcotd-hacker-news.netlify.app/"
+              target="_blank"
+            >
+              <img
+                class="project-resources__resource-image"
+                alt="Logo de GitHub"
+                loading="lazy"
+                src="./assets/img/hacker-news-logo.svg"
+              />
+              <p class="project-resources__resource-description">
+                Experimenta la demo
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Let's get in touch!</h2>
+
+        <p>
+          ¿Quieres ponerte en contacto conmigo?, ¿o deseas hablarme de un
+          proyecto que te interesa?
+        </p>
+        <p>¡Pongámonos en contacto entonces!</p>
+
+        <form
+          action="mailto:vargaspizango1@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="contact__form"
+        >
+          <div class="contact__form-control">
+            <label class="contact__form-label" for="form__name"
+              >Tu nombre</label
+            >
+            <input
+              id="form__name"
+              class="contact__form-name"
+              type="text"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="contact__form-control">
+            <label class="contact__form-label" for="form__message"
+              >Cuéntame qué es lo que piensas</label
+            >
+            <textarea
+              id="form__message"
+              class="contact__form-message"
+              rows="5"
+              maxlength="500"
+              type="text"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button--accent form__submit" type="submit">
+            ¡Hagámoslo realidad!
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <span>||S||</span>
+      </div>
+
+      <nav class="footer__networks">
+        <a href="https://github.com/sebas-tcotd" target="_blank">
+          <div class="footer__network footer__network--github"></div>
+        </a>
+
+        <a href="https://twitter.com/sebas_tcotd" target="_blank">
+          <div class="footer__network footer__network--twitter"></div>
+        </a>
+
+        <a href="https://www.instagram.com/sebas_tcotd/" target="_blank">
+          <div class="footer__network footer__network--instagram"></div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sebas-vargas/" target="_blank">
+          <div class="footer__network footer__network--linkedin"></div>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
